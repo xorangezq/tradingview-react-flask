@@ -21,3 +21,9 @@ yarn-error.log*
 
 # Yarn Integrity file
 .yarn-integrity
+
+# sys
+.DS_Store
+
+# py
+__pycache__

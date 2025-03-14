@@ -1,0 +1,4 @@
+gunicorn
+flask
+flask-cors
+loguru
