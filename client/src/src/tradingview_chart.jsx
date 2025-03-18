@@ -281,7 +281,10 @@ export default KChart = props => {
                     return;
                 }
                 candle = param.seriesData.get(serieCandles);
-                if (!candle || !seriesSide1idx || !seriesSide2idx) {
+                if (!candle ||
+                    !param.seriesData.get(seriesSide1idx) ||
+                    !param.seriesData.get(seriesSide2idx)
+                ) {
                     return;
                 }
                 setCritData([{
