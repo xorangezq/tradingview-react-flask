@@ -6,7 +6,7 @@ from util.stockinfo import get_info_by_code
 
 from loguru import logger
 
-TRANSACTIONS_CSV = os.path.join('ledger', 'transactions.csv')
+TRANSACTIONS_CSV = os.path.join('ledger', 'example.transactions.csv')
 
 transactionsdf = pd.read_csv(TRANSACTIONS_CSV, encoding='utf-8',
     dtype={
