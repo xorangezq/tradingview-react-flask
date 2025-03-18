@@ -59,6 +59,7 @@ npm start
 ## DEVELOPMENT
 
 基于 [tradingview](https://github.com/tradingview/lightweight-charts)
+
 [此处官方教程](https://tradingview.github.io/lightweight-charts/tutorials/how_to/price-line)的各项示例，都可以在 `client/src/tradingview_chart.jsx` 中快速试验
 
 技术栈：
