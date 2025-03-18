@@ -17,6 +17,8 @@
 - 支持显示交易记录
 
 
+---
+
 
 本项目不包含众多常见的技术指标。这类指标无论用哪个券商平台都能开箱即用，属于重复开发、浪费资源。本项目主要的动机和目标是：
 
@@ -25,6 +27,8 @@
 - 需要开发私有的交易系统
 - 需要快速迭代、快速编码、所见即所得
 
+
+---
 
 
 本项目不包含 A 股数据源，不限制用户的交易粒度（日 K 、 5 分 K等），也不假定用户的交易标的。因此，用户需要自行准备交易标的的历史数据，并更新 `server/app/data/xxx.csv`。
@@ -48,7 +52,23 @@ chmod +x wsgi.sh
 
 ```
 cd client/src
-npm install
+npm install # 仅初次安装
 npm start
 ```
 
+## DEVELOPMENT
+
+基于 [tradingview](https://github.com/tradingview/lightweight-charts)
+[此处官方教程](https://tradingview.github.io/lightweight-charts/tutorials/how_to/price-line)的各项示例，都可以在 `client/src/tradingview_chart.jsx` 中快速试验
+
+技术栈：
+- 前端
+    - react
+    - parcel
+    - antd（Table）
+- 后端
+    - gunicorn
+    - flask
+    - pandas
+
+欢迎 issue 和 PR
