@@ -28,5 +28,5 @@ def api_code_transactions(code):
     else:
         codedf['time'] = pd.Series([], dtype="object")
         codedf['buysell'] = pd.Series([], dtype="object")
-    apicodedf = codedf[['time', 'code', 'amount', 'price', 'buysell', 'stop']]
+    apicodedf = codedf[['time', 'code', 'amount', 'price', 'buysell']]
     return apicodedf.to_dict(orient='records')
