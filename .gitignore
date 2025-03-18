@@ -8,6 +8,7 @@ jspm_packages/
 # Parcel
 dist
 .cache
+.parcel-cache
 
 # Logs
 logs

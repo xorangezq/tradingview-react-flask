@@ -1,6 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import App from "./App";
+// 启用 antd 样式，选择不使用
+// import 'antd/dist/reset.css';  // CSS 版本
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import { Main } from "./main";
+
+ReactDOM.render(<Main />, document.getElementById("root"));

@@ -2,7 +2,7 @@
   "name": "react-parcel-starter",
   "version": "1.0.1",
   "description": "This is a minimal React starter project. Only React and React DOM have been installed",
-  "main": "src/index.html",
+  "main": "src/index.js",
   "scripts": {
     "start": "parcel src/index.html",
     "build": "parcel build src/index.html",
@@ -28,6 +28,9 @@
     "last 1 Chrome version"
   ],
   "dependencies": {
+    "antd": "^5.24.3",
+    "axios": "^1.8.2",
+    "lightweight-charts": "^5.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
@@ -35,6 +38,8 @@
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
     "@babel/preset-react": "^7.10.1",
+    "buffer": "^6.0.3",
+    "parcel": "^2.13.3",
     "parcel-bundler": "^1.12.4"
   }
 }
