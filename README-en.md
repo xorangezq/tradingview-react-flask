@@ -3,6 +3,41 @@
 
 ![snapshot](./assets/snapshot-en.jpg)
 
+This project runs tradingview locally on your own data, it
+- provides basic intuitive operations on a chart such as dragging, zooming in both chart and axis
+- supports indexes in main chart such as BOLL, MA, etc
+- supports adding markers along with K-Candles, for example this project adds markers for each historical transactions
+- you may have as many customizable side chart (panes) as you need
+- each indexes, markers and side chart is solely configurable and on/off on the spot
+- data/digits in the chart is retrievable for further integrated calculations
+- there's no assumption in data. Any trade targets is usable that you'll have to provide it by your own efforts
+- this project integrated trade data with trade transactions, which I find it at ease
+
+---
+
+Motivation:
+
+This project is not intended for a integration of common trade indexes whatsoever. There's plenty of platforms out there, either for free or premium. [TradingView](https://www.tradingview.com) itself is great.
+
+This project serves as a starting point for those who:
+- would like to develop proprietary trade indexes on their own, or for their own
+- would like to develop a trade system of their own based on indexes try-out or experiment
+- regards visualization of great value
+- regards rapid prototyping and iteration of great value
+- or, someone who just needs an it-just-work project to try-out tradingview on their own data
+
+## What there is not
+
+There is no data.
+
+This project does not assume on the trade target itself, whether it's candle data for day or for 5-min, or it's not for stocks.
+
+This project only comes with example data from four China stock in the recent year, and some mock transaction data for them.
+
+For myself, I use [证券宝](http://baostock.com/baostock/index.php/首页) , which is free, to update China stocks everyday.
+
+You'll have to provide data into `server/app/data/xxx.csv` by your own efforts. Refer to `server/app/api/api_stock.py` for formats (dead simple).
+
 ## How to run
 
 backend:
